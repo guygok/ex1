@@ -22,8 +22,8 @@ int main()
     char ch;
     printf("Please enter a character\n");
     scanf(" %c", &ch);
-	printf("Its numerical value is: %d\n", ch);
-    printf("0 for even, 1 for odd: %d\n", ch & 1);
+	printf("Its numerical value is: %d", ch);
+    printf("0 for even, 1 for odd: %d", ch & 1);
 
         // 2's complement and other representations
     printf("\n2's complement to other representations:\n");
@@ -34,7 +34,7 @@ int main()
     printf("Please enter a negative integer\n");
 	scanf(" %d", &n);
     printf("1's complement: %d\n", n + 1);
-	printf("Unsigned: %u\n", (unsigned)n);
+	printf("Unsigned: %u", (unsigned)n);
 
         // Shifting right and left
     printf("\nShifting right and left:\n");
@@ -46,7 +46,7 @@ int main()
 	printf("Please enter 3 integers\n");
 	scanf(" %d %d %d", &value, &shiftRight, &shiftLeft);
 
-	printf("After shifting right and left: %d\n", value >> shiftRight << shiftLeft);
+	printf("After shifting right and left: %d", value >> shiftRight << shiftLeft);
 
     // Even - Odd
     printf("\nEven - Odd:\n");
@@ -60,7 +60,7 @@ int main()
 	int even2 = (m & 1) ^ 1;
 	int even3 = (j & 1) ^ 1;
 	int evenCount = even1 + even2 + even3;
-	printf("0 - most of them are even, 1 - most of them are odd: %d\n", (evenCount >= 2) ? 0 : 1);
+	printf("0 - most of them are even, 1 - most of them are odd: %d", (evenCount >= 2) ? 0 : 1);
 
     // Different Bases
     printf("\nDifferent Bases:\n");
