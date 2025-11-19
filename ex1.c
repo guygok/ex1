@@ -22,7 +22,7 @@ int main()
     char ch;
     printf("Please enter a character\n");
     scanf(" %c", &ch);
-	printf("Its numerical value is: %d", ch);
+	printf("Its numerical value is: %d\n", ch);
     printf("0 for even, 1 for odd: %d", ch & 1);
 
         // 2's complement and other representations
@@ -34,7 +34,7 @@ int main()
     printf("Please enter a negative integer\n");
 	scanf(" %d", &n);
     printf("1's complement: %d\n", n + 1);
-	printf("Unsigned: %u", (unsigned)n);
+	printf("unsigned: %u", (unsigned)n);
 
         // Shifting right and left
     printf("\nShifting right and left:\n");
@@ -54,7 +54,7 @@ int main()
     If at least two of them are even - print 0.
     If at least two of them are odd - print 1. */
 	int k, m, j;
-	printf("Please enter three integers\n");
+	printf("Please enter 3 integers\n");
 	scanf(" %d %d %d", &k, &m, &j);
 	int even1 = (k & 1) ^ 1;
 	int even2 = (m & 1) ^ 1;
@@ -71,8 +71,8 @@ int main()
 	unsigned int octalNum, hexNum;
 	printf("Please enter two numbers in octal and hexadecimal bases:\n");
 	scanf(" %o %x", &octalNum, &hexNum);
-	printf("LSBs: %u, %u\n", octalNum & 1, hexNum & 1);
-	printf("MSBs: %u, %u\n", (octalNum >> 31) & 1, (hexNum >> 31) & 1);
+	printf("LSBs: %u %u\n", octalNum & 1, hexNum & 1);
+	printf("MSBs: %u %u\n", (octalNum >> 31) & 1, (hexNum >> 31) & 1);
 
     printf("Bye!");
 
